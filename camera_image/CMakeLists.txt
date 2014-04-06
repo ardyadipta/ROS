@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(spacecam)
+project(IPCamera)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -125,7 +125,8 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 install(PROGRAMS
-  scripts/spacecam.py
+  scripts/ip_camera.py
+  scripts/ip_camera_listener.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
